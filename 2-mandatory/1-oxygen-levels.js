@@ -11,9 +11,9 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels(a) {
+function safeLevels() {}
 
-}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
