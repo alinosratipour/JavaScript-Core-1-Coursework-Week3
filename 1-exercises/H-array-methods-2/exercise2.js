@@ -7,7 +7,13 @@
   Tip: use the string method .split() and the array method .join()
 */
 
-function capitalise(str) {}
+function capitalise(str) {
+    const splitWord = str.
+    split("", 1).
+    join('').
+    toUpperCase() + str.substr(1) ;
+    return splitWord;
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
