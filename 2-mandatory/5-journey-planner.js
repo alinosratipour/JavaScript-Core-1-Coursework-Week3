@@ -148,12 +148,7 @@ const londonLocations = [
   ["Greenwich", "bus", "river boat"],
 ];
 
-console.log(journeyPlanner(londonLocations, "tube"));
-// const aa = londonLocations.map(getLocationName);
-// console.log(aa);
 
-// const aa2 = londonLocations.map(getTransportModes);
-// console.log(aa2);
 function arraysEqual(a, b) {
   if (a === b) return true;
   if (a == null || b == null) return false;
