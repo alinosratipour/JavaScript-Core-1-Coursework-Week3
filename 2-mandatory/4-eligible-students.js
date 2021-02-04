@@ -9,7 +9,9 @@
 
 
 function eligibleStudents(arr) {
+   //get all attends at least 8 or above
    const attendedClass = arr.filter(num => num[1] >= 8);
+   //get all eligible students name
    return attendedClass.map(name=> name[0]);
   
 }
