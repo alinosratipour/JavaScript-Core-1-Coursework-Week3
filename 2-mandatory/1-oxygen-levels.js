@@ -11,8 +11,15 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
 
+function safeLevels(arr) {   
+    //Convert our Array item from string to float Integer
+    const ConvertToNumber = arr.map(item => {
+       return parseFloat(item);
+    });    
+    // Now having returned integer we find between them. 
+    return ConvertToNumber.find( item => item > 19.5  && item < 23.5) + "%";
+  }
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
