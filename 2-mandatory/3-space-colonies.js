@@ -16,9 +16,10 @@
 */
 
 function colonisers(col) {
-   const Letter = "A";
-   const word = "family";
-   return col.filter(el => el[0] === Letter && el.includes(word));
+    const Letter = "A";
+    const word = "family";
+    return col.filter(el => el[0] === Letter && el.includes(word));
+  
 }
 
 
