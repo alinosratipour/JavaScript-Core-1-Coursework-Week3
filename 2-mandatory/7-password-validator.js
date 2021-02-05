@@ -21,15 +21,43 @@ Expected Result:
 PasswordValidationResult=  [false, false, false, false, true]
 
 */
+/** 
+
+*/
+
+
+
+const check = [/[a-z]/ , /[A-Z]/, /[0-9]/, /[!#$%,&*]/];
 
 function validatePasswords(passwords) {
+const validPassword = passwords.map((item,index,arr)=>{
+       
+  if(item.length >= 5 &&
+        check[0].test(item) &&
+        check[1].test(item) &&
+        check[2].test(item) &&
+        check[3].test(item) &&
+        arr.indexOf(item) === index) {
+    
+      return true;
+    }else{
+      return false; 
+    }
+  })
 
+  return validPassword;
 }
+
+ 
+ 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const passwords1 = ["Se%5", "TktE.TJTU", "384#HsHF", "dvyyeyy!5", "tryT3729"]
 const passwords2 = ["StUFf27%", "Pl3nty!", "Jai33", "shajsaUA**&&", "Pl3nty!"]
+
+
+
 
 const util = require('util');
 
